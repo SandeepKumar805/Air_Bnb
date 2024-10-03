@@ -54,14 +54,12 @@
       <div class="navbar-nav ms-auto">
         <a class="nav-link" href="/listings/new">Airbnb your home</a>
         <% if(!currUser) { %>
-            <a class="nav-link" href="/signup"><b>SignUp</b></a>
-            <a class="nav-link" href="/login"><b>Login</b></a>
-        <% } %> 
-        <% if(currUser) { %>
-            <p>Welcome, <%= currUser.username %></p> <!-- Assuming currUser has a username property -->
+        <a class="nav-link" href="/signup"><b>SignUp</b></a>
+        <a class="nav-link" href="/login"><b>Login</b></a>
+        <% } %> <% if(currUser) { %>
+        <a class="nav-link" href="/logout"><b>LogOut</b></a>
         <% } %>
-    </div>
-    
+      </div>
     </div>
   </div>
 </nav>
